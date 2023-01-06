@@ -66,5 +66,51 @@ console.log(direccion);
 ```
 ### C.  Tipo de Datos en JavaScript
 
+```js
+//1 number
+let velocidad = 98.5;
+console.log(typeof velocidad);
+```
+```js
+//2 string
+let userName = 'Sergio';
+console.log(typeof userName);
+```
+```js
+//3 boolean
+let isActive = true;
+console.log(typeof isActive);
+```
+```js
+//4 array (matrices)
+let autos = ['Ford Mustang', 'Toyota Corolla', 'Honda Accord'];
+console.log(typeof (autos));
+```
+```js
+//5 object
+let autos = { modelo: 'Ford Mustang', potencia: 300, velocidad: 200 };
+console.log(typeof autos);
+```
+```js
+//undefined
+let nombre;
+console.log(typeof nombre);
+```
+```js
+//null 
+let edad = null;
+console.log(typeof edad);
+
+const array = [1, 2, 3, 4, 5];
+
+const sum = array.reduce(function(a, b){
+     return a + b;
+ }, 0);  
+ console.log(sum); 
+```
+
+
+
+
 
 
