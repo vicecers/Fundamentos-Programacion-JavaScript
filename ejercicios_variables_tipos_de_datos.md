@@ -1,7 +1,8 @@
 # Ejercicios estructura secuencial aplicando variables y tipos de datos
 
 
-# Para esta guia podes optar por cualquier resolución
+## Para esta guia podes optar por cualquier resolución
+-------------------------------------------------------
 
 #### A continuacion dejo resuelto el ejercicio 1 solo con javascript y html basico. Aplicar el mismo criterio para el resto de las actividades 
 ## Resolucion aplicando javascript
