@@ -1,10 +1,112 @@
 ## Ejercicios estructura secuencial aplicando variables
 ### Para realizar la práctica, se debe crear una carpeta por ejercicio, que contenga el html (index.html), el codigo javascript (main.js) y opcional estilos (style.css)
-#### A continuacion dejo resuelto el ejercicio 1 como ejemplo. Aplicar el mismo criterio para el resto de las actividades
+#### A continuacion dejo resuelto el ejercicio 1 como ejemplo. Aplicar el mismo criterio para el resto de las actividades (recuerden que los estilos son opcionales)
 -----------------------------
 
 ```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <h3 class="h3">SUMA y PRODUCTO</h3>
+    <form action="#">
+        <input type="text" id="num1" placeholder="Ingrese el numero 1" class="text">
+        <br>
+        <br>
+        <input type="text" id="num2" placeholder="Ingrese el numero 2" class="text">
+        <br>
+        <br>
+        <input id="button" type="submit" class="btn" Calcular>
+    </form>
+
+    <label id="suma" class="label"></label>
+    <br>
+    <label id="producto" class="label"></label>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
+```
+```css
+/*style.css*/
+.text {
+    background: transparent;
+    border: 1px solid #0099CC;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 12px;
+    padding: 5px;
+ }
+
+ .btn {
+    /* Color del texo */
+    color: #0099CC;
+    /* Eliminar color de fondo */
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    border: 2px solid #0099CC;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px;
+
+ }
+
+ .btn:hover {
+    /* Al poner el curso encima (hover) */
+    background-color: #008CBA;
+    color: white;
+}
+
+h3 {
+    color: #6c2eb9;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+  }
+  
+.label {
+    color: #6c2eb9;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Arial;
+}  
+```
+```js
+/*main.js*/
+function suma(){
+    //obtiene el valor del primer input y lo asigna a num1
+    let num1 = document.querySelector('#num1').value;
+
+    //obtiene el valor del segundo input y lo asigna a num2
+    let num2 = document.querySelector('#num2').value;
+
+    //Realiza los calculos
+    //parseInt convierte texto a numero
+    let sum = parseInt(num1)+parseInt(num2);
+    let prod = parseInt(num1) * parseInt(num2);
+
+    //selecciono los labels 
+    let l1 = document.querySelector('#suma');
+    let l2 = document.querySelector('#producto');
+
+    //Muestro el resultado en los labels
+    l1.innerHTML = 'La suma es: ' + sum;
+    l2.innerHTML = 'El producto es: ' + prod;
+   
+}
+//Escucho el evento click en el boton
+let element = document.querySelector('#button');
+element.addEventListener('click', suma);
 ```
 
 
