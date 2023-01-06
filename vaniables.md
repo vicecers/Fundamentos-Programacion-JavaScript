@@ -14,3 +14,38 @@ Hay que tener en cuenta que en lenguajes de programación como "C", deben ser de
  console.log(nombre);
  console.log(precio);
 ```
+```js
+// 2. var se puede re declarar
+ var nombre = 'Felix';
+ console.log(nombre);
+ var nombre = 'Jane';
+ console.log(nombre);
+```
+```js
+// 3. let no se puede declarar de nuevo;
+let precio = 15.40;
+//let perro = 5.20; da error
+console.log(precio);
+precio = 20.52;
+console.log(precio);
+```
+```js
+// 4 const no se puede declarar sin iniciar
+// const direccion; //da error
+const direccion = 'avenida Paseos';
+console.log(direccion);
+```
+```js
+
+//5 const no se puede reasignar
+// direccion = 'avenida Principal'; //da error
+// console.log(direccion);
+```
+```js
+//6 scope (alcance)
+// var es visible en la funcion donde se declaro o global
+//let y const son visibles en el bloque donde se declararon o globales
+```
+
+
+
