@@ -1,7 +1,28 @@
-## Ejercicios estructura secuencial aplicando variables
-### Para realizar la práctica, se debe crear una carpeta por ejercicio, que contenga el html (index.html), el codigo javascript (main.js) y opcional estilos (style.css)
-#### A continuacion dejo resuelto el ejercicio 1 como ejemplo. Aplicar el mismo criterio para el resto de las actividades (recuerden que los estilos son opcionales)
+# Ejercicios estructura secuencial aplicando variables y tipos de datos
+
+
+# Para esta guia podes optar por cualquier resolución
+
+#### A continuacion dejo resuelto el ejercicio 1 solo con javascript y html basico. Aplicar el mismo criterio para el resto de las actividades 
+## Resolucion aplicando javascript
+```js
+let num1 = 10; 
+let num2 = 20;
+
+let suma = num1 + num2;
+let prod = num1 * num2;
+
+console.log('La suma es: ' + suma);
+console.log('El producto es: ' + prod);
+```
+
+## Resolucion aplicando html, css y javascript
+### Para realizar la práctica, se debe crear una carpeta por ejercicio, que contenga el html (index.html), el codigo javascript (main.js) y estilos (style.css)
+#### A continuacion dejo resuelto el ejercicio 1 con html + css + js. Aplicar el mismo criterio para el resto de las actividades 
+
 -----------------------------
+
+
 
 ```html
 <!-- index.html -->
