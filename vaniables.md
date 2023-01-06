@@ -47,5 +47,24 @@ console.log(direccion);
 //let y const son visibles en el bloque donde se declararon o globales
 ```
 
+###  B. Reglas para nombrar Variables
+```js
+//1. No se puede usar palabras reservadas (function, var, for, while, etc.)
+
+//2. No pueden empezar con un dígito
+
+// let 2x = 6;
+```
+```js
+    //3. Pueden empezar con una letra, guión bajo o $ 
+    let $car = 'ford mustang';
+    console.log($car);
+```
+```js
+   //4. Para nombres complejos se usa notación de camello:
+   // let userName = 'Juan';
+```
+### C.  Tipo de Datos en JavaScript
+
 
 
